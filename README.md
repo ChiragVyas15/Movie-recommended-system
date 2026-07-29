@@ -1,43 +1,179 @@
-# Movie-recommended-system
+# 🎬 Movie Recommendation System
 
-📌The workflow involves:
-Loading preprocessed movie data (movies.pkl).
-Using similarity-based algorithms (likely cosine similarity / content-based filtering) implemented in the Jupyter Notebook (movie_recommended.ipynb).
-Deploying an interactive web app (app.py) that allows users to select a movie and get recommendations.
+A Machine Learning-based Movie Recommendation System that recommends similar movies using **Content-Based Filtering** and **Cosine Similarity**. The application is built with **Python**, **Streamlit**, **Pandas**, and **Scikit-learn** to provide a fast and interactive movie recommendation experience.
 
+---
 
-⚙️Components
+## 📌 Features
 
-**app.py**
-Uses Streamlit to create a user interface.
-Loads movie data from a pickle file (movies.pkl).
-Displays a dropdown (selectbox) with available movie titles.
-Acts as the frontend of the recommendation system.
+- 🎥 Recommend similar movies instantly
+- 🔍 Search movies by title
+- 🤖 Content-Based Recommendation System
+- 📊 Cosine Similarity for finding similar movies
+- 🌐 Interactive Streamlit Web Interface
+- ⚡ Fast prediction using pre-trained model
 
-**movie_recommended.ipynb**
-Main development notebook where the recommendation model is trained.
+---
 
-**Handles:
-Data preprocessing**
-Feature extraction (movie metadata such as genre, cast, etc.)
-Similarity computation (probably cosine similarity or count vectorizer)
-Recommendation function definition
-Serves as the backend logic builder.
+## 🛠️ Tech Stack
 
-**movies.pkl**
-A serialized file containing the movie dataset (titles and metadata).
-Loaded into both the notebook and the app for making predictions/recommendations.
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-learn
+- Pickle
 
+---
 
+## 📂 Project Structure
 
-🚀 Functionality
-User selects a movie title from the dropdown in the Streamlit app.
-The system fetches the most similar movies based on the recommendation model.
-Recommended movies are displayed to the user.
+```
+Movie-recommended-system/
+│
+├── app.py
+├── model.pkl
+├── movies.pkl
+├── similarity.pkl
+├── requirements.txt
+├── README.md
+└── assets/
+```
 
-📊 Key Technologies
-Python
-Streamlit (UI)
-Pandas (data handling)
-Pickle (data storage)
-Machine Learning / NLP techniques (for similarity-based recommendations)
+---
+
+## 🚀 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/ChiragVyas15/Movie-recommended-system.git
+cd Movie-recommended-system
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the application
+
+```bash
+streamlit run app.py
+```
+
+Open your browser and visit:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📖 How It Works
+
+1. User selects a movie.
+2. The system converts movie information into feature vectors.
+3. Cosine Similarity is calculated between movies.
+4. The top similar movies are retrieved.
+5. Recommended movie titles (and posters if available) are displayed.
+
+---
+
+## 📊 Machine Learning Workflow
+
+- Data Collection
+- Data Cleaning
+- Feature Engineering
+- Text Vectorization
+- Cosine Similarity Matrix
+- Recommendation Generation
+- Streamlit Deployment
+
+---
+
+## 📷 Demo
+
+Add screenshots of your application here.
+
+```
+images/home.png
+images/result.png
+```
+
+---
+
+## 📦 Requirements
+
+Install all dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Typical libraries include:
+
+- streamlit
+- pandas
+- numpy
+- scikit-learn
+- pickle
+
+---
+
+## 📈 Future Improvements
+
+- User Authentication
+- Hybrid Recommendation System
+- Collaborative Filtering
+- Deep Learning Recommendation Model
+- TMDB API Integration
+- Movie Posters & Trailers
+- User Ratings and Reviews
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Chirag Vyas**
+
+- GitHub: https://github.com/ChiragVyas15
+- LinkedIn: *(Add your LinkedIn profile here)*
+
+---
+
+⭐ If you found this project useful, don't forget to **Star** the repository!
